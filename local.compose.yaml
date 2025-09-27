@@ -1,0 +1,25 @@
+services:
+
+  web:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    init: true
+    # command: tail -f /dev/null 
+    volumes:
+      - ./backend:/app
+    ports:
+      - "8111:80"
+      
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    ports: 
+      - "3111:3111"
+    environment:
+      - NODE_ENV=development
+    tty: true
