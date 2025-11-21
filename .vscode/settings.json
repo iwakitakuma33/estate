@@ -6,4 +6,7 @@
     "[rust]": {
         "editor.defaultFormatter": "rust-lang.rust-analyzer"
     },
+    "files.associations": {
+        "*.gs": "javascript"
+    }
 }

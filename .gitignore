@@ -2,3 +2,6 @@ __pycache__
 node_modules
 build
 dist
+
+# Google Apps Script設定ファイル（個人情報含む）
+.clasp.json

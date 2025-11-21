@@ -130,7 +130,7 @@ const SpreadsheetOverview = () => {
     // HEADERはA列目
     let headerColumnIndex = 0;
     // A列の設定確認
-    let headerRowIndex = 0;
+    let headerRowIndex = null;
     // HEADERにあるkey
     let headerData: { [key: string]: number } = {};
     for (let row = 0; row < 1000; row++) { 
@@ -248,7 +248,7 @@ const SpreadsheetOverview = () => {
     // HEADERはA列目
     let headerColumnIndex = 0;
     // A列の設定確認
-    let headerRowIndex = 0;
+    let headerRowIndex = null;
     // HEADERにあるkey
     let headerData: { [key: string]: number[] } = {};
     for (let row = 0; row < 1000; row++) { 
